@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Seasons from './components/Seasons';
+import PicSearchEngine from './components/PicSearchEngine';
 
 const App = () => {
-	return (
-		<Seasons/>
-	);
+	return <PicSearchEngine />;
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));

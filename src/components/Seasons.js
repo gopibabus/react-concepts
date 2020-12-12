@@ -11,6 +11,7 @@ class Seasons extends Component {
 			errorMessage: '',
 		};
 	}
+	
 	componentDidMount() {
 		window.navigator.geolocation.getCurrentPosition(
 			(position) => this.setState({ lat: position.coords.latitude }),
