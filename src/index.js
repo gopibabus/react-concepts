@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import PicSearchEngine from './components/PicSearchEngine';
+import VideoSearchEngine from './components/VideoSearchEngine';
 
 const App = () => {
-	return <PicSearchEngine />;
+	return <VideoSearchEngine />;
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));
