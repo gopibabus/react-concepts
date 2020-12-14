@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import VideoSearchEngine from './components/VideoSearchEngine';
+import Widgets from './components/Widgets';
 
 const App = () => {
-	return <VideoSearchEngine />;
+	return <Widgets />;
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));
