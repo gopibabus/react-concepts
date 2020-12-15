@@ -1,6 +1,8 @@
 import React from "react";
 
-import Accordion from "./Accordion";
+// import Accordion from "./Accordion";
+import SearchWidget from "./SearchWidget";
+
 const items = [
 	{
 		title: 'What is React?',
@@ -19,7 +21,8 @@ const items = [
 const Widgets = () => {
   return (
 		<div className="ui container" style={{'marginTop': '20px'}}>
-			<Accordion items={items} />
+			{/* <Accordion items={items} /> */}
+			<SearchWidget/>
 		</div>
   );
 }
