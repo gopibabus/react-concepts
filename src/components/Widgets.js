@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
 // import Accordion from "./Accordion";
-import SearchWidget from "./SearchWidget";
+// import SearchWidget from "./SearchWidget";
+import Dropdown from "./Dropdown";
 
 const items = [
 	{
@@ -18,11 +19,32 @@ const items = [
 	},
 ];
 
+const dropDownOptions = [
+	{
+		label: 'The color Red',
+		value: 'red',
+	},
+	{
+		label: 'The color Green',
+		value: 'green',
+	},
+	{
+		label: 'The color Blue',
+		value: 'blue',
+	},
+];
+
 const Widgets = () => {
+	const [selected, setSelected] = useState(dropDownOptions[0]);
   return (
-		<div className="ui container" style={{'marginTop': '20px'}}>
+		<div className='ui container' style={{ marginTop: '20px' }}>
 			{/* <Accordion items={items} /> */}
-			<SearchWidget/>
+			{/* <SearchWidget/> */}
+			<Dropdown
+				options={dropDownOptions}
+				selected={selected}
+				onSelectedChange={setSelected}
+			/>
 		</div>
   );
 }
